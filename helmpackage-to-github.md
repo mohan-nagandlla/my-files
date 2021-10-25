@@ -37,3 +37,16 @@ git push -u origin gh-pages
 helm repo add <repo address> 
 ```
 the repo address will appear at GitHub pages settings where you have changed the default branch from main to gh-pages step 1
+
+**Step 5**
+	Now the back end we have complerd to display the yaml templates on main branch need to switch to the main branch
+```
+helm checkout master
+```
+	now copy the helm repo to pwd
+```
+git add .
+git commit -m 'updates'
+git push -u origin master
+```
+
