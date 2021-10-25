@@ -14,14 +14,12 @@ helm package ingres
 	2.gh-pages
 
 **Step 2**
-
 	Once you create a new repository, then under code section you can able to find the HTTPS Git clone URL copy that and clone from terminal.
 	command git clone <https url>
 	now you can able to see the repo name as a directory at pwd
 	cd < repo directory >
 
 **Step 3**
-
 	need to switch to gh-pages by using git checkout gh-pages
 	now copy that package .tar file to here
 	now we need an index file to access this helm
@@ -33,7 +31,6 @@ git push -u origin gh-pages
 ```
 
 **Step 4**
-
 	Now go to your repo settings and change the settings called 'Pages settings now has its own dedicated tab' use the gh-pages branch and save.
 	You have successfully added your helm package to github you can add those repo in your local helm
 ```
