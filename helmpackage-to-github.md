@@ -43,7 +43,8 @@ the repo address will appear at GitHub pages settings where you have changed the
 ```
 helm checkout master
 ```
-	now copy the helm repo to pwd
+now copy the helm repo to pwd
+	
 ```
 git add .
 git commit -m 'updates'
