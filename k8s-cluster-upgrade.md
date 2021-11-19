@@ -89,7 +89,7 @@ node/controlplane uncordoned
 root@controlplane:~# k get nodes
 NAME           STATUS   ROLES                  AGE    VERSION
 controlplane   Ready    control-plane,master   149m   v1.20.0
-node01         Ready    worker                 148m   v1.20.0
+node01         Ready    worker                 148m   v1.19.0
 ```
 
 
