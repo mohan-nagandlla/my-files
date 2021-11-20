@@ -137,7 +137,3 @@ node01         Ready    worker                 148m   v1.20.0
 ```
 
 Now we have successfully upgrade the kubernets clsuter from 1.19.0 --> 1.20.0
-
-
-
-
