@@ -50,6 +50,23 @@ metadata:
   name: ingress-serviceaccount
 
 ---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  labels:
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/part-of: ingress-nginx
+  name: ingress-role-binding
+  namespace: depl
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: ingress-role
+subjects:
+- kind: ServiceAccount
+  name: ingress-serviceaccoun
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
